@@ -4,78 +4,209 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="index.js" defer></script>
     <style>
         body{
-            
+            margin: 0px;
+            background-color: #1F2739;
             width: 400px;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: Sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            font-weight: 100;
         }
+        main {
+            width: 100%;
+            max-width: 400px; /* Adicionado para definir um limite de largura para o conteúdo principal */
+            display: flex;
+            flex-direction: column;
+            align-items: center;}
         table{
             border-collapse: collapse;
-            width: 300px;
+            width: 100%;
+            max-width: 300px;
+            box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+            border-radius: 15px;
+            overflow: hidden;
+            background-color: white;
+            margin: 20px 0;
         }
         td{
             border: 1px solid black;
             padding: 8px;
-            
+        }
+        h1{
+            padding-top: 40px;
+            color: #47AEDF;
+        }
+        input{
+            width: 70px;
+            border: none;
+            box-sizing: border-box;
+            font-size: 18px;
+        }
+        .input-text{
+            background-color: transparent;
+            color: rgba(255, 255, 255, 0.384);
+        }
+        td{
+            color: #D05F70;
+        }
+        button{
+            border-radius: 20px;
+            padding: 10px;
+            background-color: #FFF842;
+            cursor: pointer;
+        }
+        tr:nth-child(even) {
+            background-color: #2C3446;
+        }
+        tr:nth-child(odd) {
+            background-color: #323C50;
         }
     </style>
 </head>
 <body>
     <main>
-        <h1>Lista Frutas/Verduras</h1>
+        <h1>Frutas/Verduras</h1>
 
+        <button id="sessionBtn">Salvar</button>
         <table>
             <tr>
-                <td>Goiaba</td>
-                <td>R$ 7.00</td>
+                <td>Acerola</td>
+                <td> <input type="text" class="input-text"></td>
 
-                <td>Goiaba</td>
-                <td>R$ 8.00</td>
+                <td>Cebola</td>
+                <td> <input type="text" class="input-text"></td>
             </tr>
             <tr>
-                <td>Goiaba</td>
-                <td>R$ 8.00</td>
+                <td>Ameixa</td>
+                <td> <input type="text" class="input-text"></td>
 
-                <td>Goiaba</td>
-                <td>R$ 8.00</td>
+                <td>Colve Manteiga</td>
+                <td> <input type="text" class="input-text"></td>
             </tr>
             <tr>
-                <td>Goiaba</td>
-                <td>R$ 8.00</td>
+                <td>Abacaxi</td>
+                <td> <input type="text" class="input-text"></td>
 
-                <td>Goiaba</td>
-                <td>R$ 8.00</td>
+                <td>Jerimun</td>
+                <td> <input type="text" class="input-text"></td>
             </tr>
             <tr>
-                <td>Goiaba</td>
-                <td>R$ 8.00</td>
+                <td>Alface</td>
+                <td> <input type="text" class="input-text"></td>
 
-                <td>Goiaba</td>
-                <td>R$ 8.00</td>
+                <td>macaxeira</td>
+                <td> <input type="text" class="input-text"></td>
             </tr>
             <tr>
-                <td>Goiaba</td>
-                <td>R$ 8.00</td>
+                <td>Alho</td>
+                <td> <input type="text" class="input-text"></td>
 
-                <td>Goiaba</td>
-                <td>R$ 8.00</td>
+                <td>Manga</td>
+                <td> <input type="text" class="input-text"></td>
             </tr>
             <tr>
-                <td>Goiaba</td>
-                <td>R$ 8.00</td>
+                <td>Abacate</td>
+                <td> <input type="text" class="input-text"></td>
 
-                <td>Goiaba</td>
-                <td>R$ 8.00</td>
+                <td>Maracujá</td>
+                <td> <input type="text" class="input-text"></td>
             </tr>
             <tr>
-                <td>Goiaba</td>
-                <td>R$ 8.00</td>
+                <td>Brocolis</td>
+                <td> <input type="text" class="input-text"></td>
 
-                <td>Goiaba</td>
-                <td>R$ 8.00</td>
+                <td>Milho</td>
+                <td> <input type="text" class="input-text"></td>
+            </tr>
+            <tr>
+                <td>Beterraba</td>
+                <td> <input type="text" class="input-text"></td>
+
+                <td>pera</td>
+                <td> <input type="text" class="input-text"></td>
+            </tr>
+            <tr>
+                <td>Batata</td>
+                <td> <input type="text" class="input-text"></td>
+
+                <td>Pimenão</td>
+                <td> <input type="text" class="input-text"></td>
+            </tr>
+            <tr>
+                <td>Batata Doce</td>
+                <td> <input type="text" class="input-text"></td>
+
+                <td>Tomate</td>
+                <td> <input type="text" class="input-text"></td>
+            </tr>
+            <tr>
+                <td>Cenoura</td>
+                <td> <input type="text" class="input-text"></td>
+
+                <td>Kiwi</td>
+                <td> <input type="text" class="input-text"></td>
+            </tr>
+            <tr>
+                <td>Colve Flor</td>
+                <td> <input type="text" class="input-text"></td>
+
+                <td>Uva</td>
+                <td> <input type="text" class="input-text"></td>
+            </tr>
+            <tr>
+                <td>Gengibre</td>
+                <td> <input type="text" class="input-text"></td>
+
+                <td>Pimentinha</td>
+                <td> <input type="text" class="input-text"></td>
+            </tr>
+            <tr>
+                <td>Coco verde</td>
+                <td> <input type="text" class="input-text"></td>
+
+                <td>Coco Seco</td>
+                <td> <input type="text" class="input-text"></td>
+            </tr>
+            <tr>
+                <td>Pitaya</td>
+                <td> <input type="text" class="input-text"></td>
+
+                <td>Repolho</td>
+                <td> <input type="text" class="input-text"></td>
+            </tr>
+            <tr>
+                <td>Maxixe/Quiabo</td>
+                <td> <input type="text" class="input-text"></td>
+
+                <td></td>
+                <td> <input type="text" class="input-text"></td>
             </tr>
         </table>
     </main>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function(){
+        const inputs = document.querySelectorAll('.input-text');
+        inputs.forEach((input, index) => {
+            const savedValue = localStorage.getItem(`input-${index}`);
+            if (savedValue) {
+                input.value = savedValue;
+            }
+        });
+
+        document.getElementById('sessionBtn').addEventListener('click', function(){
+            inputs.forEach((input, index) => {
+                localStorage.setItem(`input-${index}`, input.value);
+            });
+            alert('Todos os textos foram salvos');
+        });
+    });
+    </script>
 </body>
 </html>
